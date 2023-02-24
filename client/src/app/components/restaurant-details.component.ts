@@ -21,6 +21,7 @@ export class RestaurantDetailsComponent implements OnInit{
   restaurant!:Restaurant;
   form!:FormGroup
   commentObj!:Comment
+  imgurl = "";
 
   ngOnInit(): void {
     console.log("START RESTAURANTS")
@@ -30,6 +31,7 @@ export class RestaurantDetailsComponent implements OnInit{
     this.svc.getRestaurant(cuisine, idx).then( v=>{
       console.log(v);
       this.restaurant = v;
+      this.imgurl = "qas275.sgp1.digitaloceanspaces.com/"+this.restaurant.restaurantId+".jpeg"
   });
   }
 
