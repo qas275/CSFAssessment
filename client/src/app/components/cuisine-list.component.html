@@ -1,0 +1,8 @@
+<p>cuisine-list works!</p>
+<table>
+    <tr *ngFor="let cuisine of cuisines">
+        <td>
+            <a [routerLink]="['/restaurants',cuisine]">{{cuisine}}</a>
+        </td>
+    </tr>
+</table>

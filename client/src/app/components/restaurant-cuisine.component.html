@@ -1,0 +1,10 @@
+<p>restaurant-restaurant works!</p>
+
+<table>
+    <tr *ngFor="let restaurant of restaurants; let idx=index">
+        <td>
+            <a [routerLink]="['/restaurants',cuisine,idx]">{{restaurant}}</a>
+        </td>
+    </tr>
+</table>
+<button [routerLink]="['/cuisines']">BACK</button>
