@@ -31,7 +31,7 @@ export class RestaurantDetailsComponent implements OnInit{
     this.svc.getRestaurant(cuisine, idx).then( v=>{
       console.log(v);
       this.restaurant = v;
-      this.imgurl = "qas275.sgp1.digitaloceanspaces.com/"+this.restaurant.restaurantId+".jpeg"
+      this.imgurl = "https://qas275.sgp1.digitaloceanspaces.com/"+this.restaurant.restaurantId+".jpeg"
   });
   }
 
